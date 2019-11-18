@@ -1,0 +1,26 @@
+<!--pages/category/index.wxml-->
+<view class="category">
+   <!-- 搜索框 -->
+   <searchInput></searchInput>
+   <!-- 滚动容器 -->
+   <view class="scroll">
+     <view class="scroll-left">
+       <scroll-view class="scroll1" scroll-y="true"  scroll-top="false">
+          <view class="{{index == idx ? 'red' : ''}}" catchtap='txtClick' data-index='{{index}}' wx:for="{{scrollLeft}}" wx:key="cat_id">{{item.cat_name}}</view>
+        </scroll-view>
+     </view>
+   <view class="scroll-right">
+        <scroll-view class="scroll2"  scroll-y="true"   scroll-top="true">
+         <view class="scroll-idx" wx:for="{{scrollRight}}" wx:key="cat_id">
+          <view class="scroll-top">{{item.cat_name}}</view>
+          <view class="scroll-bottom">
+             <navigator url="/pages/goods_list/index?id={{item.cat_id}}" class="nav"  wx:for="{{item.children}}" wx:key="cat_id">
+                <image mode="widthFix" src="{{item.cat_icon}}"></image>
+                <text>{{item.cat_name}}</text>
+             </navigator>
+          </view>
+      </view>
+        </scroll-view>
+   </view>
+   </view>
+</view>

@@ -1,0 +1,11 @@
+<!--components/goodsList/goodsList.wxml-->
+
+<view class="list">
+  <view class="listTop">
+    <view class="{{index == idx ? 'red' : ''}}" wx:for="{{list}}" wx:key="index" catchtap="listClick" data-idx="{{index}}">{{item.value}}</view>
+  </view>
+  <view class="listBottom">
+
+    <slot></slot>
+  </view>
+</view>

@@ -1,0 +1,49 @@
+<view class="box">
+   <view class="adress">
+      
+      <view class="juAddress">
+         <view class="adressLeft">
+             <text>收货人: {{address.userName}}</text>
+             <text>{{address.juTiAddress}}</text>
+         </view>
+         <view class="addressRight">{{address.telNumber}}</view>
+      </view>
+   </view>
+   <view class="addressBottom">
+        <view class="top">购物车</view>
+        <view class="bottom">
+        
+         <view  class="item" wx:for="{{goods}}" wx:key="*this">
+              
+               <view class="img">
+                   <image mode="widthFix" src="{{item.goods_big_logo}}"></image>
+               </view>
+               <view class="wenzi">
+                   <text class="xiang">{{item.goods_name}}</text>
+                   <view class="price">
+                      <text>￥ {{item.goods_price}}</text>
+                      <view class="jia">
+                         
+                          <view class="text">x {{item.num}}</view>
+                          
+                      </view>
+                   </view>
+               </view>
+           </view>
+        
+        </view>
+   </view>
+</view>
+<view class="all">
+   
+   <view class="content">
+      <view class="top">
+          <text>合计:</text>
+          <view>￥ {{allPrice}}</view>
+      </view>
+      <text class="bottom">包含运费</text>
+   </view>
+   <view class="right">
+       <view catchtap="pay">支付({{allNum}})</view>
+   </view>
+</view>

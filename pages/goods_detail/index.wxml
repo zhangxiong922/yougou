@@ -1,0 +1,47 @@
+<!--pages/goods_detail/index.wxml-->
+
+<view class="box">
+   <view class="banner">
+       <swiper indicator-dots="true"
+        autoplay="true" interval="3000" duration="500" circular>
+        <block wx:for="{{goods_obj.pics}}" wx:key="*this">
+          <swiper-item>
+            <image catchtap="bigImage" data-img = "{{index}}" mode='widthFix' src="{{item.pics_sma}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="tet">￥ {{goods_obj.goods_price}}</view>
+      <view class="text">
+          <text class="left">{{goods_obj.goods_name}}</text>
+          <view class="right" catchtap="shoucang">
+             <text class="iconfont {{isFlag?'icon-shoucang1' : 'icon-shoucang'}}"></text>
+             <text class="shoucang">收藏</text>
+          </view>
+      </view>
+   </view>
+   <view class="tuwen">图文详情</view>
+   <view>
+   <rich-text nodes="{{goods_obj.goods_introduce}}"></rich-text>
+      
+   </view>
+</view>
+<view class="fixed">
+    <view>
+       <text class="iconfont icon-kefu"></text>
+       <text>联系客服</text>
+       <button open-type='contact'></button>
+    </view>
+    <view>
+    <text class="iconfont icon-yixianshi-"></text>
+       <text>分享</text>
+       <button open-type='share'></button>
+
+    </view>
+    <navigator url="/pages/cart/index" open-type='switchTab'>
+      <text class="iconfont icon-gouwuche"></text>
+       <text>购物车</text>
+
+    </navigator>
+    <view class="setGoods" catchtap="setGoods">加入购物车</view>
+    <view>立即购买</view>
+</view>

@@ -1,0 +1,1 @@
+<collect tbs="{{collectHead}}" bindzifn="pfn" tbss="{{collectNav}}" bindNavCollect="navCollect"    tbsss="{{flagsArr}}"  ></collect>

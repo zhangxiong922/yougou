@@ -1,0 +1,95 @@
+/* pages/category/index.wxss */
+page {
+  height: 100%;
+}
+.category {
+  height: 100%;
+  padding-top: 96rpx;
+  overflow: hidden;
+}
+searchInput {
+  width: 100%;
+  height: 50rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+}
+.scroll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.scroll-left {
+   flex:3;
+  height: 100%;
+  padding-top: 4rpx;
+  
+
+}
+.scroll1 {
+  width: 100%;
+  height: 100%;
+
+}
+.scroll1 view {
+  width: 100%;
+  height: 90rpx;
+  box-sizing: border-box;
+  border-bottom: 4rpx solid #ccc;
+  border-right: 4rpx solid #ccc;
+  border-left: 4rpx solid #ccc;
+  text-align: center;
+  line-height: 90rpx;
+}
+.scroll1 view:first-child {
+  border-top: 4rpx solid #ccc;
+}
+.scroll-right {
+  flex:7;
+  height: 100%;
+ 
+}
+.scroll-top {
+  height: 120rpx;
+  text-align: center;
+  line-height: 120rpx;
+}
+.nav {
+  float: left;
+  width: 33.33%;
+  height: 140rpx;
+  box-sizing: border-box;
+ 
+  text-align: center;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 30rpx;
+}
+.nav image {
+  width: 50%;
+  margin-bottom: 10rpx;
+}
+.nav text {
+  font-size: 22rpx;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.scroll2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.scroll-idx {
+  display: flex;
+  flex-direction: column;
+}
+.red {
+    color: red
+}

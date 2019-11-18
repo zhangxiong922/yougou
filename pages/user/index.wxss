@@ -1,0 +1,151 @@
+/* pages/user/index.wxss */
+page {
+  background-color: #edece8;
+}
+.box {
+  width: 100%;
+  height: 400rpx;
+  position: relative;
+}
+.wddl {
+   width: 100%;
+  height: 400rpx;
+  position: relative;
+  background-color: red;
+}
+.wddl navigator {
+  width: 300rpx;
+  height: 100rpx;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+line-height: 100rpx;
+border: 2rpx solid #fff;
+color: #fff;
+}
+.box .pigImg {
+  width: 100%;
+  height: 100%;
+  filter: blur(8px);
+}
+.box .info {
+  width: 250rpx;
+  height: 250rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.box .info .smallIng {
+  width: 50%;
+  border-radius: 50%;
+}
+.box .info text {
+  font-size: 38rpx;
+  color: #fff;
+}
+.shouc {
+  width: 94%;
+  background-color: #fff;
+  display: flex;
+ margin: 0 auto;
+ 
+ 
+}
+.bottom {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 350rpx;
+}
+.shouc navigator {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 10rpx;
+}
+.shouc navigator text:first-child {
+  color: red;
+  margin: 10rpx 0;
+}
+.shouc navigator text:last-child {
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+  
+}
+.wod {
+  margin: 0 auto;
+  margin-top: 20rpx;
+  background-color: #fff;
+  width: 94%;
+  box-sizing: border-box;
+  padding: 20rpx;
+  font-size: 36rpx;
+  margin-bottom: 4rpx;
+}
+.allddan {
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  background-color: #fff;
+}
+.allddan .nav {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.allddan .nav text:first-child {
+  color: red;
+  font-size: 44rpx;
+  margin: 10rpx;
+}
+.allddan .nav text:last-child {
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+}
+.address {
+  width: 94%;
+  margin: 20rpx auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.address text:last-child {
+  color: #ccc;
+}
+.kefu {
+  width: 94%;
+  margin: 4rpx auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+  position: relative;
+}
+.kefu button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  padding: 0;
+}
+.kefu text:nth-child(2) {
+  color: #ccc;
+}

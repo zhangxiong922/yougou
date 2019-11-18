@@ -1,0 +1,63 @@
+<!--pages/cart/index.wxml-->
+<view class="box">
+   <view class="adress">
+      <button catchtap='getAdress' wx:if="{{!address.userName}}">添加收货地址</button>
+      <view wx:else class="juAddress">
+         <view class="adressLeft">
+             <text>收货人: {{address.userName}}</text>
+             <text>{{address.juTiAddress}}</text>
+         </view>
+         <view class="addressRight">{{address.telNumber}}</view>
+      </view>
+   </view>
+   <view class="addressBottom">
+        <view class="top">优购生活馆</view>
+        <view class="bottom">
+        <block wx:if="{{goods.length > 0}}">
+         <view  class="item" wx:for="{{goods}}" wx:key="*this">
+               <view class="check">
+                 <checkbox-group data-id="{{item.goods_id}}" bindchange="setCheck">
+                    <checkbox checked="{{item.flag}}"></checkbox>
+                 </checkbox-group>
+               </view>
+               <view class="img">
+                   <image mode="widthFix" src="{{item.goods_big_logo}}"></image>
+               </view>
+               <view class="wenzi">
+                   <text class="xiang">{{item.goods_name}}</text>
+                   <view class="price">
+                      <text>￥ {{item.goods_price}}</text>
+                      <view class="jia">
+                          <view class="prev" catchtap="prevGoodsNum" data-id='{{item.goods_id}}'>-</view>
+                          <view class="text">{{item.num}}</view>
+                          <view class="add" catchtap="addGoodsNum" data-id='{{item.goods_id}}'>+</view>
+                      </view>
+                   </view>
+               </view>
+           </view>
+        </block> 
+          <block wx:else>
+             <view class="kon">购物车是空的</view>
+          </block>
+           <!-- <view wx:else>购物车是空的</view> -->
+        </view>
+   </view>
+</view>
+<view class="all">
+   <view class="left">
+     <checkbox-group bindchange="allCheck">
+      <checkbox checked="{{flags}}"></checkbox>
+   </checkbox-group>
+   <text>全选</text>
+   </view>
+   <view class="content">
+      <view class="top">
+          <text>合计:</text>
+          <view>￥ {{allPrice}}</view>
+      </view>
+      <text class="bottom">包含运费</text>
+   </view>
+   <view class="right">
+       <view catchtap="nav">结算({{allNum}})</view>
+   </view>
+</view>

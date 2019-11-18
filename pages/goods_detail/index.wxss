@@ -1,0 +1,117 @@
+/* pages/goods_detail/index.wxss */
+page {
+  /* height: 100%; */
+  padding-bottom: 90rpx;
+}
+.box {
+  /* height: 100%; */
+  box-sizing: border-box;
+  padding: 20rpx;
+  /* margin-bottom: 20rpx; */
+  /* overflow: hidden; */
+
+}
+.banner {
+  border-bottom: 16rpx solid #dedede;
+  box-sizing: border-box;
+  padding-bottom: 20rpx;
+}
+.banner swiper image {
+ width:400rpx;
+ 
+}
+.banner swiper swiper-item {
+  text-align: center;
+}
+.banner swiper {
+  width: 100%;
+  height: 400rpx;
+  margin-bottom: 10rpx;
+}
+.banner .tet {
+  font-size: 40rpx;
+  color: red;
+  margin-bottom: 10rpx;
+}
+.banner .text{
+   display: flex;
+}
+.banner .text .left {
+  flex:4;
+  box-sizing: border-box;
+  border-right: 4rpx solid #ccc;
+  /* padding: 20rpx; */
+  padding-right: 40rpx;
+  overflow:hidden;
+text-overflow:ellipsis;
+display:-webkit-box;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2;
+font-size: 32rpx;
+line-height: 50rpx;
+}
+.banner .text .right {
+  flex:1;
+  /* background-color: pink */
+}
+.tuwen {
+  height: 90rpx;
+  color: red;
+  font-size:42rpx;
+  padding-left: 40rpx;
+  line-height: 90rpx;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.right .iconfont {
+    font-size: 40rpx;
+}
+.right .shoucang {
+   font-size: 26rpx;
+}
+
+.fixed {
+  width: 100%;
+  height: 90rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top: 2rpx solid #ccc;
+  display: flex;
+  background-color: #fff;
+}
+.fixed view:nth-child(-n + 2),
+.fixed navigator {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+ position: relative;
+}
+.fixed view:nth-child(-n + 2) button {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.fixed view:nth-child(4),
+.fixed view:nth-child(5) {
+    flex:1.5;
+    text-align: center;
+    line-height: 90rpx;
+    color: #fff;
+    font-size: 30rpx;
+    background-color: orange;
+}
+.fixed view:nth-child(5) {
+  background-color: red
+}
+.icon-shoucang1 {
+  color: red;
+}

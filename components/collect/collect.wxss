@@ -1,0 +1,80 @@
+/* components/collect/collect.wxss */
+page {
+  background-color: #edece8;
+}
+.header {
+  width: 100%;
+  height: 90rpx;
+  border-bottom: 2rpx solid #ccc;
+  display: flex;
+  background-color: #fff;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.header .item {
+  flex:1;
+  text-align: center;
+  height: 100%;
+  line-height: 90rpx;
+}
+.red {
+  color: red;
+  border-bottom: 2rpx solid #f00;
+}
+
+.content .nav {
+  display: flex;
+  padding: 20rpx 30rpx;
+  background-color: #edece8;
+
+} 
+.content .nav .navItem {
+  font-size: 32rpx;
+  padding: 10rpx;
+  border: 2rpx solid #ccc;
+  margin-right: 30rpx;
+}
+.content .nav .borderRed {
+  font-size: 32rpx;
+  padding: 10rpx;
+  color: red;
+  border: 2rpx solid #f00;
+  margin-right: 30rpx;
+}
+.bottom navigator {
+  display: flex;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: 0 10rpx 10rpx;
+}
+.bottom navigator .left {
+  flex:2;
+  display: flex;
+  justify-content: center;
+}
+.bottom navigator .left image {
+  width: 80%;
+  margin: 20rpx 0;
+}
+.bottom navigator .right {
+  flex:5;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10rpx;
+  justify-content: space-between
+}
+.bottom navigator .right text:first-child {
+  text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+font-size: 32rpx;
+}
+.bottom navigator .right text:last-child {
+  color: red;
+font-size: 32rpx;
+
+}

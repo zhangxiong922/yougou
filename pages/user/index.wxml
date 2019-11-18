@@ -1,0 +1,73 @@
+<!--pages/user/index.wxml-->
+<view wx:if="{{userInfo.nickName}}" class="box">
+    <image class="pigImg" src="{{userInfo.avatarUrl}}"></image>
+    <view class="info">
+        <image mode='widthFix' src="{{userInfo.avatarUrl}}" class="smallIng"></image>
+        <text>{{userInfo.nickName}}</text>
+    </view>
+   
+</view>
+<view wx:else class="wddl">
+<navigator  url="/pages/login/index">登录</navigator>
+    
+</view>
+ <view class="bottom">
+    <view class="shouc">
+    <navigator>
+       <text>0</text>
+       <text>收藏的店铺</text>
+    </navigator>
+    <navigator url="/pages/collect/index">
+       <text>{{shoucang}}</text>
+       <text>收藏的商品</text>
+    </navigator>
+    <navigator>
+       <text>0</text>
+       <text>关注的商品</text>
+    </navigator>
+    <navigator>
+       <text>0</text>
+       <text>我的足迹</text>
+    </navigator>
+</view>
+<view class="wod">我的订单</view>
+<view class="allddan">
+    <navigator class="nav">
+        <text class="iconfont icon-ding_dan"></text>
+        <text>全部订单</text>
+    </navigator>
+    <navigator class="nav">
+        <text class="iconfont icon-fukuantongzhi"></text>
+        <text>待付款</text>
+    </navigator>
+    <navigator class="nav">
+        <text class="iconfont icon-receipt-address"></text>
+        <text>待收货</text>
+    </navigator>
+    <navigator class="nav">
+        <text class="iconfont icon-tuihuotuikuan_dianpu"></text>
+        <text>退款/退货</text>
+    </navigator>
+</view>
+<view class="address">
+    <text>收货地址管理</text>
+    <text>></text>
+</view>
+<view class="kefu">
+    <text>联系客服</text>
+    <text>400-618-4000</text>
+</view>
+<view class="kefu">
+    <text>意见反馈</text>
+    <text>></text>
+    <button open-type='feedback'></button>
+</view>
+<view class="kefu">
+    <text>关于我们</text>
+    <text>></text>
+</view>
+<view class="address">
+    <text>把应用推荐给其他人</text>
+    <text>></text>
+</view>
+ </view>

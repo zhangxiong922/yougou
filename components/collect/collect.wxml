@@ -1,0 +1,41 @@
+<!--components/collect/collect.wxml-->
+<view class='box'>
+  <view class="header">
+   <view catchtap="setHeader" data-id='{{item.id}}' class="item {{item.flag ?'red':''}}" wx:for="{{tbs}}" wx:key="index">{{item.value}}</view>
+</view>
+   <view class="content">
+      <block wx:if="{{tbs[0].flag ==true}}">
+          <view class="nav">
+             <view catchtap="navCollect" data-id='{{item.id}}' wx:for="{{tbss}}" wx:key="index" class=" {{item.flag ? 'borderRed':'navItem'}}">{{item.value}}</view>         
+          </view>
+          <view class="bottom">
+             <block wx:if="{{tbss[0].flag == true}}">
+                 <navigator wx:for="{{tbsss}}" wx:key="index" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+                     <view class="left">
+                        <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+                     </view>
+                     <view class="right">
+                        <text class="top">{{item.goods_name}}</text>
+                        <text class="bottom">￥ {{item.goods_price}}</text>
+                     </view>
+                 </navigator>
+             </block>
+             <block wx:if="{{tbss[1].flag == true}}">
+                 <navigator>2</navigator>
+             </block>
+             <block wx:if="{{tbss[2].flag == true}}">
+                 <navigator>3</navigator>
+             </block>
+          </view>
+      </block>
+      <block wx:if="{{tbs[1].flag ==true}}">
+          <view>2</view>
+      </block>
+      <block wx:if="{{tbs[2].flag ==true}}">
+          <view>3</view>
+      </block>
+      <block wx:if="{{tbs[3].flag ==true}}">
+          <view>4</view>
+      </block>
+   </view>
+</view>

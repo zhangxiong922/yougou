@@ -1,0 +1,21 @@
+/* components/goodsList/goodsList.wxss */
+ .list {
+   height: 100%;
+ }
+.list .listTop {
+  height: 90rpx;
+  border-bottom: 2rpx solid #000;
+  display: flex;
+}
+.list .listTop view {
+  flex: 1;
+  text-align: center;
+  line-height: 90rpx;
+}
+.listBottom {
+  height: 100%;
+}
+.red {
+  color: red;
+  border-bottom: 2rpx solid #f00;
+}

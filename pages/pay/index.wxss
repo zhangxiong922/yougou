@@ -1,0 +1,159 @@
+/* pages/pay/index.wxss */
+/* pages/cart/index.wxss */
+page {
+  padding-bottom: 100rpx;
+}
+.adress {
+  width: 100%;
+  height: 200rpx;
+  overflow: hidden;
+  border-bottom: 30rpx solid #eee;
+}
+.adress button {
+  width: 60%;
+  height: 90rpx;
+  margin: 55rpx auto;
+  border: 2rpx solid #ccc;
+}
+.juAddress {
+  display: flex;
+}
+.adressLeft {
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  font-size: 32rpx;
+  margin: 20rpx 0 0 20rpx;
+}
+.adressLeft text {
+  width: 90%;
+  line-height: 50rpx;
+   overflow:hidden;
+text-overflow:ellipsis;
+display:-webkit-box;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2;
+}
+.addressRight {
+  flex:1;
+  font-size: 32rpx;
+  margin-top: 20rpx;
+}
+.addressBottom .top {
+    height: 90rpx;
+    border-bottom: 3rpx solid #ccc;
+    box-sizing: border-box;
+    padding-left: 20rpx;
+    font-size: 36rpx;
+    line-height: 90rpx;
+}
+.addressBottom .bottom .item {
+  display: flex;
+  flex-direction: row;
+  /* height: 230rpx; */
+  box-sizing: border-box;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.addressBottom .bottom .item .check {
+  flex:1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.addressBottom .bottom .item .img {
+  flex:3;
+  text-align: center;
+  vertical-align: middle;
+}
+.addressBottom .bottom .item .img image {
+  width: 80%;
+}
+.addressBottom .bottom .item .wenzi {
+  flex:6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.addressBottom .bottom .item .wenzi .xiang {
+  font-size: 32rpx;
+   overflow:hidden;
+text-overflow:ellipsis;
+display:-webkit-box;
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2;
+}
+.addressBottom .bottom .item .wenzi .price {
+  display: flex;
+  justify-content: space-between;
+}
+.addressBottom .bottom .item .wenzi .price text {
+  color: red;
+  font-size: 32rpx;
+}
+.addressBottom .bottom .item .wenzi .price .jia {
+  display: flex;
+  font-size: 32rpx;
+}
+.addressBottom .bottom .item .wenzi .price .jia .prev,
+.addressBottom .bottom .item .wenzi .price .jia .add {
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border: 2rpx solid #000;
+}
+.addressBottom .bottom .item .wenzi .price .jia .text {
+  margin: 0 20rpx;
+}
+.all {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  border-top: 2rpx solid #ccc;
+  z-index: 99;
+  background-color: #fff;
+}
+.all .left {
+  flex:1;
+  display: flex;
+  font-size: 36rpx;
+  justify-content: center;
+  align-items: center;
+}
+.all .content {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-right: 10rpx;
+  align-items: flex-end;
+}
+.all .content .top {
+  display: flex;
+}
+.all .content .top text{
+  font-size: 38rpx;
+}
+.all .content .top view {
+  color: red;
+  font-size: 38rpx;
+}
+.all .right {
+  flex:1;
+}
+.all .content .bottom {
+  font-size: 26rpx;
+  color: #666;
+}
+.all .right {
+  background-color: red;
+  font-size: 38rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+}

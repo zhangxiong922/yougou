@@ -1,0 +1,39 @@
+/* pages/search/index.wxss */
+
+page{
+  background-color:#edece8;
+}
+.search {
+  width: 100%;
+  display: flex;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.search input {
+  flex:1;
+  background-color: #fff;
+  height: 70rpx;
+  border-radius: 10rpx;
+}
+.search button {
+  width: 120rpx;
+  height: 100%;
+  margin-left: 20rpx;
+  /* margin-right: 20rpx; */
+  font-size: 28rpx;
+  padding: 0;
+}
+.nav {
+  display: felx;
+  flex-direction: column;
+  background-color: #fff;
+}
+.nav .tiaoz {
+  font-size: 28rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #ccc;
+  overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+}

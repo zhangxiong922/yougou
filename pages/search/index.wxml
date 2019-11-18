@@ -1,0 +1,10 @@
+
+<view class="box">
+    <view class="search">
+        <input value="{{value}}" type="text" placeholder="请输入您的商品" bindinput="setQuery"></input>
+        <button hidden='{{flag}}' catchtap='quxiao'>取消</button>
+    </view>
+    <view class="nav">
+        <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" class="tiaoz" wx:for="{{qsearch}}" wx:key="goods_id">{{item.goods_name}}</navigator>
+    </view>
+</view>
